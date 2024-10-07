@@ -12,17 +12,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contato</title>
 
-  <link rel="stylesheet" href="./styles/index.css">
+  <link rel="stylesheet" href="./styles/contato.css">
   
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <main>
-    <h3>Faça comtato comigo</h3>
+  <main class="contact">
+    <h3>Faça contato comigo</h3>
     <strong><span>*</span> indica obrigatoriedade</strong>
 
-    <form action="https://api.staticforms.xyz/submit" method="post" id="emailForm">
+    <form action="https://api.staticforms.xyz/submit" method="post" id="emailForm" data-form>
 
         <label for="name">Nome<span>*</span></label>
         <input type="text" id="name" name="name" placeholder="Coloque seu nome:" required>
@@ -31,11 +31,10 @@
         <label for="mensage">Mensagem<span>*</span></label>
         <textarea id="mensage" name="mensage" placeholder="Coloque sua mensagem:" required></textarea>
         
-        <input type="hidden" name="redirectTo" value="./obeigado.html">
-        <button type="submit">ENVIAR</button>
+        <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/obrigado.html">
+        <button type="submit"  data-button>ENVIAR</button>
       <input type="hidden" name="accessKey" value="df1fb20c-ae43-41f0-9a69-3de323272399">
     </form>
   </main>
 </body>
-
 </html>

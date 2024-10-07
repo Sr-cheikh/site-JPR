@@ -1,3 +1,4 @@
+@import url(./global.css);
 *{
   margin: 0;
   padding: 0;
@@ -8,73 +9,32 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
-  background-color: #101026;
 }
 
-main{
+.contact{
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 10px 45px;
+  padding: 20px 45px;
   background-color: #1d1d2e;
   width: 500px;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
-main h2{
-  color: #f5f5f5;
-  font-size: 2.5rem;
+.contact h3{
+  color: var(--primary-color);
+  font: var(--text-lg);
   margin: 2rem;
 }
 
-main form{
-  display: flex;
-  flex-direction: column;
-  width: 100%;
+.contact strong{
+  color: var(--primary-color);
+  font: var(--text-sm);
 }
 
-form label{
-  color: #f5f5f5;
-  font-size: 17px;
-  margin: 4px;
-}
-
-form input{
-  padding: 15px;
-  outline: none;
-  border: 0;
-  margin-bottom: 20px;
-  font-size: 15px;
-  transition: all 0.5s;
-}
-
-form input:focus,
-form textarea:focus{
-  border-radius: 16px;
-}
-
-form textarea{
-  padding: 10px;
-  outline: none;
-  border: 0;
-  font-size: 15px;
-  margin-bottom: 30px;
-  transition: all 0.5s;
-}
-
-form button{
-  padding: 15px;
-  cursor: pointer;
-  font-size: 16px;
-  background-color: transparent;
-  border: 2px solid #f5f5f5;
-  color: #f5f5f5;
-  transition: all 1s;
-}
-
-form button:hover{
-  background-color: #f5f5f5;
-  color: #101026;
-  border-radius: 16px;
+span{
+  color: red;
+  font-size: 20px;
 }
