@@ -191,7 +191,7 @@ main header {
             background-color: var(--text-header);
             transition: all 1s;
             cursor: pointer;
-            
+
 
             & a {
                 width: 100%;
@@ -204,12 +204,12 @@ main header {
         }
     }
 
-    & ul:hover{
+    & ul:hover {
 
-        & li:hover{
+        & li:hover {
             background-color: var(--color-link);
 
-            & a:hover{
+            & a:hover {
                 text-decoration: none;
                 color: var(--bg-color);
             }
@@ -219,39 +219,39 @@ main header {
 
 footer {
     display: grid;
-    grid-template-areas: 
-    "h3 h3 div"
-    "ul ul div";
+    grid-template-areas:
+        "h3 h3 div"
+        "ul ul div";
     row-gap: 30px;
     align-content: center;
     border-radius: 0 0 12px 12px;
 
     padding: 20px;
-    
+
     background-color: var(--bg-footer);
-    
+
     font: var(--text-md);
-    
-    & h3{
+
+    & h3 {
         font: var(--text-lg);
         grid-area: h3;
-        
+
     }
-    
-    & ul{
+
+    & ul {
         grid-area: ul;
         display: flex;
         justify-content: space-around;
-        
-        & li{
+
+        & li {
             display: flex;
             align-items: center;
-            
+
             gap: 12px;
-        };
+        }
     }
-    
-    .orcamento{
+
+    .orcamento {
         grid-area: div;
         display: flex;
         flex-direction: column;
@@ -259,8 +259,8 @@ footer {
         gap: 24px;
 
         margin-block: 32px;
-        
-        & a{
+
+        & a {
             display: block;
             width: 80%;
             margin: auto;
@@ -271,14 +271,14 @@ footer {
         }
     }
 
-    .orcamento:hover{
+    .orcamento:hover {
         grid-area: div;
         display: flex;
         flex-direction: column;
         text-align: center;
         gap: 24px;
 
-        & a:hover{
+        & a:hover {
             display: block;
             width: 80%;
             margin: auto;
@@ -286,6 +286,146 @@ footer {
             color: var(--primary-color);
             border-radius: 12px;
             text-decoration: none;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .area-div {
+        grid-template-areas:
+            "p p p "
+            "li li li "
+            "li li li "
+            "li li li ";
+        gap: 16px;
+    }
+
+    .infomaction {
+        flex-direction: column;
+        padding: 5px;
+
+        & img {
+            width: 90%;
+        }
+
+        & div {
+            width: 90%;
+            text-wrap: wrap;
+        }
+    }
+
+    .services {
+        grid-template-areas:
+            "grid-1"
+            "img-1 "
+            "img-1"
+            "img-1"
+            "grid-2"
+            "img-2"
+            "img-2"
+            "img-2";
+    }
+
+    footer {
+        & ul {
+            flex-direction: column;
+
+            & li {
+                display: flex;
+                align-items: center;
+
+                gap: 12px;
+            }
+        }
+    }
+}
+
+@media (max-width: 540px) {
+
+    .area-h2 {
+        font: var(--text-xxl);
+        color: black;
+        -webkit-text-stroke: 2px var(--color-link);
+        margin-bottom: 20px;
+    }
+
+
+    .area-h3 {
+
+        & h3 {
+            font: var(--text-md);
+        }
+
+        & p {
+            font: var(--text-sm);
+        }
+    }
+
+    .infomaction {
+
+        & img {
+            width: 100%;
+        }
+
+        & div {
+            width: 100%;
+        }
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        border-radius: 0 0 12px 12px;
+    
+        padding: 20px;
+    
+        background-color: var(--bg-footer);
+    
+        font: var(--text-md);
+    
+        & h3 {
+            font: var(--text-lg);
+            grid-area: h3;
+    
+        }
+    
+        & ul {
+            grid-area: ul;
+            display: flex;
+            justify-content: space-around;
+    
+            & li {
+                display: flex;
+                align-items: center;
+    
+                gap: 12px;
+            }
+        }
+    
+        .orcamento {
+            grid-area: div;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            gap: 24px;
+    
+            margin-block: 32px;
+    
+            & a {
+                display: block;
+                width: 80%;
+                margin: auto;
+                background-color: var(--whats-light);
+                color: var(--primary-color);
+                border-radius: 12px;
+                text-decoration: none;
+            }
         }
     }
 }
