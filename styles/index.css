@@ -343,6 +343,13 @@ footer {
 
 @media (max-width: 540px) {
 
+    main header {
+        height: 560px;
+        background-image: url(https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,fit=crop/A852B1PjoPSZGGbE/imagem-1-Yan6k4Qvo1SlJBee.jpg);
+        background-size: cover;
+        background-position-x: -160px;
+    }
+
     .area-h2 {
         font: var(--text-xxl);
         color: black;
