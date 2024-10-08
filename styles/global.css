@@ -188,10 +188,7 @@ section + section{
 @media (max-width: 530px){
   body{
     width: 139%;
-    background-color: var(--bg-color);
-    color: #f5f5f5;
-    font: var(--text-md);
-    padding: 0px;
+  padding: 0;
   }
   
   .header{
