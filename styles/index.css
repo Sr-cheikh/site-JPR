@@ -2,7 +2,7 @@
 
 main header {
     height: 560px;
-    background-image: url(https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,fit=crop/A852B1PjoPSZGGbE/imagem-1-Yan6k4Qvo1SlJBee.jpg);
+    background-image: url(../assets/bg-image.svg);
     background-size: cover;
 }
 
@@ -266,7 +266,7 @@ footer {
             width: 80%;
             margin: auto;
             background-color: var(--whats-light);
-            color: var(--primary-color);
+            color: #f5f5f5;
             border-radius: 12px;
             text-decoration: none;
         }
@@ -343,11 +343,10 @@ footer {
 
 @media (max-width: 540px) {
 
-    main header {
-        height: 560px;
-        background-image: url(https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,fit=crop/A852B1PjoPSZGGbE/imagem-1-Yan6k4Qvo1SlJBee.jpg);
-        background-size: cover;
-        background-position-x: -160px;
+    main header{
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position-y: 300px;
     }
 
     .area-h2 {
@@ -428,11 +427,6 @@ footer {
             & a {
                 display: block;
                 width: 80%;
-                margin: auto;
-                background-color: var(--whats-light);
-                color: var(--primary-color);
-                border-radius: 12px;
-                text-decoration: none;
             }
         }
     }

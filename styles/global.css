@@ -54,29 +54,13 @@ body{
   padding-block: 20px;
 
   & .logo{
-    width: 100%;
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: left;
-    text-align: left;
 
-    font: var(--text-md);
-
-    & i{
-      font: var(--text-xl);
-      color: var(--color-link);
-      margin-right: 1rem;
-    }
-
-    & div h1{
-      text-transform: uppercase;
-      color: var(--text-h1);
-    }
-
-    & div h2{
-      text-transform: uppercase;
-      color: var(--color-link);
-      letter-spacing: 1rem;
+    img{
+      width: 100%;
     }
   }
 
@@ -152,27 +136,13 @@ section + section{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: start;
 
     & .logo{
-      align-items: center;
+      display: flex;
       justify-content: center;
-  
-      font: var(--text-md);
-  
-      & i{
-        font: var(--text-xxl);
-        margin-right: 3rem;
-      }
-  
-      & div h1{
-        text-transform: uppercase;
-        color: var(--text-h1);
-      }
-  
-      & div h2{
-        text-transform: uppercase;
-        color: var(--color-link);
-        letter-spacing: 1rem;
+      img{
+        width: 50%;
       }
     }
   
@@ -202,29 +172,11 @@ section + section{
     padding-block: 0px;
   
     & .logo{
-      width: 100%;
       display: flex;
-      align-items: center;
       justify-content: center;
-      text-align: left;
-  
-      font: var(--text-sm);
-  
-      & i{
-        font: var(--text-xl);
-        color: var(--color-link);
-        margin-right: 1rem;
-      }
-  
-      & div h1{
-        text-transform: uppercase;
-        color: var(--text-h1);
-      }
-  
-      & div h2{
-        text-transform: uppercase;
-        color: var(--color-link);
-        letter-spacing: 1rem;
+
+      img{
+        width: 80%;
       }
     }
   
