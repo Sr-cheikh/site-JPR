@@ -54,7 +54,7 @@ body{
   padding-block: 20px;
 
   & .logo{
-    width: 90%;
+    width: 40%;
     display: flex;
     align-items: center;
     justify-content: left;
@@ -141,6 +141,7 @@ section + section{
     & .logo{
       display: flex;
       justify-content: center;
+      margin-top: 1rem;
       img{
         width: 50%;
       }
@@ -149,7 +150,7 @@ section + section{
     & nav{
       display: flex;
       align-items: center;
-      margin-top: 1.5rem;
+      margin-top: .5rem;
       gap: 2rem;
     }
   }
@@ -157,8 +158,8 @@ section + section{
 
 @media (max-width: 530px){
   body{
-    width: 139%;
-  padding: 0;
+    width: 100%;
+    padding: 1px;
   }
   
   .header{
@@ -181,20 +182,17 @@ section + section{
     }
   
     & nav{
+      width: 100%;
       display: flex;
       align-items: center;
-      gap: 2rem;
+      justify-content: center;
+      gap: 1.5rem;
        
       & a{
         text-decoration: none;
         color: var(--color-link);
-        font: var(--text-sm);
+        font: var(--text-xm);
         transition: all .5s;
-      }
-  
-      & a:hover{
-        color: #0000FF;
-        text-decoration: underline;
       }
     }
   }

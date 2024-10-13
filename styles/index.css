@@ -349,6 +349,10 @@ footer {
         background-position-y: 300px;
     }
 
+    .alinhar div:nth-child(1) {
+        margin-top: 60px;
+    }
+
     .area-h2 {
         font: var(--text-xxl);
         color: black;
