@@ -372,6 +372,11 @@ footer {
         }
     }
 
+    .area-div{
+        display: block;
+        max-width: 100%;
+    }
+
     .infomaction {
 
         & img {
